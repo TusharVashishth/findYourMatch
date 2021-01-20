@@ -1,0 +1,35 @@
+.search {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.search__textbox {
+  width: 100%;
+  padding: 8px;
+  border-radius: 20px;
+  border: 2px solid #d5d5d5;
+  outline: none;
+  color: gray;
+  font-weight: bolder;
+}
+
+.search__button {
+  background-color: #fd5068 !important;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+/* * Media Query */
+@media screen and (max-width: 600px) {
+  .search {
+    flex-direction: column;
+  }
+  .search__button {
+    width: 100% !important;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 8px;
+    margin-left: 0px;
+  }
+}

@@ -1,0 +1,41 @@
+.friendsList {
+  margin-top: 30px;
+}
+
+.friendsList__card {
+  box-shadow: 0px 6px 52px -25px rgba(0, 0, 0, 0.68);
+  padding: 0.5rem 0.5rem;
+  width: 230px;
+  min-height: 230px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.friendsList__cardImg {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.friendsList__userInfo > button {
+  background-color: #fd5068 !important;
+  color: #ffffff !important;
+}
+
+.notFound__img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .frinedsList__smallScreen {
+    display: flex;
+    justify-content: center;
+  }
+  .friendsList__card {
+    width: 230px;
+  }
+}

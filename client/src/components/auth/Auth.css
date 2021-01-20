@@ -1,0 +1,23 @@
+.auth__cross {
+  width: 25px;
+  object-fit: contain;
+  float: right;
+  cursor: pointer;
+}
+
+.auth__logo {
+  flex-direction: column;
+  align-items: center;
+}
+.auth__logo > img {
+  margin-top: 10px;
+  width: 35px;
+  object-fit: contain;
+}
+
+.social__buttons {
+  margin-top: 30px;
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: column !important;
+}

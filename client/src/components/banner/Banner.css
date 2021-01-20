@@ -1,0 +1,140 @@
+.banner {
+  /* background-image: linear-gradient(
+      rgba(253, 80, 104, 0.6),
+      rgba(253, 80, 104, 0.5)
+    ),
+    url("../../assets/images/banner1.jpg"); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url("../../assets/images/banner1.jpg");
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  position: relative;
+}
+.banner__loginButtonMobile {
+  display: none;
+}
+.banner__navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.banner__brand {
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  /* padding: 10px; */
+}
+.banner__logo {
+  width: 35px;
+  object-fit: contain;
+}
+.banner__loginButton {
+  color: #fd5068 !important;
+  background-color: #ffffff !important;
+  padding: 10px !important;
+  font-weight: bolder !important;
+}
+
+.banner__loginButton:hover {
+  color: #ffffff !important;
+  /* background-color: #fd5068 !important; */
+  background-image: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
+}
+.banner__centerText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  flex-direction: column;
+}
+
+.banner__centerText h1 {
+  color: #ffffff;
+  font-size: 120px;
+}
+
+.banner__registerButton {
+  /* background-image: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%); */
+  background-color: #fd5068;
+  color: #ffffff;
+}
+
+.button {
+  padding: 10px 40px;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  transition: all 500ms;
+  width: 100%;
+  font-weight: 500;
+}
+
+.banner__registerButton:hover {
+  transform: scale(1.07);
+}
+
+.link {
+  text-decoration: none;
+}
+.link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* * Media Queries */
+
+@media screen and (max-width: 1200px) {
+  .banner__centerText h1 {
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .banner__centerText h1 {
+    font-size: 75px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner__centerText h1 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner__brand {
+    font-size: 25px;
+  }
+  .banner__navbar {
+    padding: 8px;
+  }
+  .banner__loginButton {
+    display: none !important;
+  }
+
+  .banner__centerText {
+    justify-content: space-evenly;
+  }
+  .banner__centerText h1 {
+    font-size: 45px;
+    text-align: center;
+  }
+
+  .banner__buttons > button {
+    margin-bottom: 10px;
+  }
+  .banner__loginButtonMobile {
+    border: 1px solid #ffffff !important;
+    background-color: transparent;
+    color: #ffffff;
+    display: inline !important;
+  }
+}
